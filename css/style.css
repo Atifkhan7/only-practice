@@ -1,0 +1,225 @@
+/* common css  start */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a:hover {
+  text-decoration: none;
+}
+.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+/* common css  start */
+
+.section h2.section-head {
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section h2.section-head:after {
+  background-color: black;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 20px auto;
+}
+/* header css start ++++++++++++++++++++++ */
+#header {
+  background-color: #e74c3c;
+}
+#logo {
+  font-size: 2rem;
+  margin-top: 5px;
+}
+#menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  display: inline-block;
+}
+#menu li a {
+  display: block;
+  padding: 15px 10px;
+  color: #fff;
+}
+#menu li a:hover {
+  background-color: #c0392b;
+}
+/* header css end ++++++++++++++++++++++ */
+#banner {
+  background: url(img/banner.jpg) no-repeat center center/cover;
+}
+.banner-title {
+  padding-top: 5rem;
+}
+.banner-title h1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+}
+.banner-title p.lead {
+  color: #fff;
+  background: rgba(231, 76, 60, 0.7);
+  padding: 10px;
+}
+.service-box {
+  text-align: center;
+}
+.service-box i.fa,
+.service-box i.fa-gem {
+  color: #e74c3c;
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+#testimonial {
+  background: url("../img/tim-van-der-kuip-CPs2X8JYmS8-unsplash.jpg") no-repeat
+    cetner center/cover;
+  padding: 50px 0px;
+  position: relative;
+}
+#testimonial:before {
+  background: rgb(52, 73, 94), 0.7;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.testimonial img {
+  border-radius: 50%;
+}
+/* recent news */
+.news-post img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.news-post h3 {
+  font-size: 1.35rem;
+}
+.news-post h3 a {
+  color: #e74c3c;
+}
+.post-date {
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+.post-date:before {
+  content: "\f073";
+  font-family: fontawesome;
+  padding-right: 5px;
+}
+a.read-more {
+  font-size: 14px;
+  color: #e74c3c;
+}
+a.read-more:after {
+  content: "\f101";
+  font-family: fontawesome;
+  padding-left: 5px;
+}
+
+#footer-sidebar {
+  color: #fff;
+  background: #34495e;
+  padding: 20px 0px;
+}
+.footer-widget h4:after {
+  content: "";
+  background: #fff;
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 5px 0px;
+}
+.footer-widget a {
+  color: #fff;
+}
+.latest-news {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.latest-news li {
+  margin-bottom: 3px;
+}
+.latest-news li:before {
+  content: "\f101";
+  font-family: fontawesome;
+  padding-right: 5px;
+}
+
+#footer {
+  color: #fff;
+  background: #2c3e50;
+  padding: 10px 0px;
+}
+
+#social-icon {
+  display: inline-block;
+  padding-left: 5px;
+  padding: 0;
+  margin: 0;
+}
+#social-icon li {
+  display: inline-block;
+  padding-left: 5px;
+}
+#social-icon li a {
+  color: #fff;
+  font-size: 23px;
+}
+
+/* media queries css strat --------------- */
+@media (max-width: 992px) {
+  .news-post {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  #logo {
+    margin: 10px 0px;
+  }
+
+  .banner-title {
+    padding-top: 20px;
+  }
+  .banner-title h1 {
+    font-size: 1.7rem;
+  }
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .testimonial {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .service-box {
+    margin-bottom: 30px;
+  }
+  .news-post {
+    margin-bottom: 30px;
+  }
+  .footer-widget {
+    margin-bottom: 20px;
+  }
+  #footer {
+    text-align: center;
+  }
+  #social-icon {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 515px) {
+  #menu li {
+    display: block;
+  }
+}
